@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="375.0" prefWidth="490.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <Button fx:id="read" layoutX="12.0" layoutY="12.0" mnemonicParsing="false" onAction="#read" prefHeight="39.0" prefWidth="100.0" text="Read">
+        <font>
+          <Font size="18.0" />
+        </font>
+    </Button>
+    <Button fx:id="display" alignment="CENTER" layoutX="140.0" layoutY="12.0" mnemonicParsing="false" onAction="#display" prefHeight="39.0" prefWidth="100.0" text="Display">
+        <font>
+          <Font size="18.0" />
+        </font>
+    </Button>
+    <Button fx:id="sort" alignment="CENTER" layoutX="270.0" layoutY="12.0" mnemonicParsing="false" onAction="#sort" prefHeight="39.0" prefWidth="100.0" text="Sort">
+        <font>
+          <Font size="18.0" />
+        </font>
+    </Button>
+    <Button fx:id="remove" alignment="CENTER" layoutX="390.0" layoutY="12.0" mnemonicParsing="false" onAction="#remove" prefHeight="39.0" prefWidth="100.0" text="Remove">
+        <font>
+          <Font size="18.0" />
+        </font>
+    </Button>
+    <TableView fx:id="table" layoutY="100.0" prefHeight="275.0" prefWidth="470.0">
+      <columns>
+          <TableColumn fx:id="id" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="type" prefWidth="75.0" text="Type" />
+          <TableColumn fx:id="setup" prefWidth="200.0" text="Joke" />
+          <TableColumn fx:id="punchline" prefWidth="120.0" text="Punchline" />
+      </columns>
+    </TableView>
+</AnchorPane>
